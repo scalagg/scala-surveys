@@ -2,6 +2,7 @@ package gg.scala.survey.survey
 
 import gg.scala.survey.registrar.KSurveyAvailabilityHandler
 import gg.scala.survey.survey.deployment.KSurveyDeployment
+import gg.scala.survey.survey.questionnaire.KSurveyQuestionnaire
 import java.util.*
 
 /**
