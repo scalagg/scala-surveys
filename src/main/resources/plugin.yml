@@ -1,0 +1,8 @@
+name: ksurvey
+version: 1.0.0
+main: gg.scala.survey.SurveySpigotPlugin
+
+author: Scala
+website: https://scala.gg
+
+depend: [Lemon, Cubed, helper]
