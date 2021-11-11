@@ -1,6 +1,8 @@
 package gg.scala.survey.player
 
 import gg.scala.common.Savable
+import gg.scala.survey.registrar.KPlayerHandler
+import gg.scala.survey.survey.KSurveyEntityCompletion
 import java.util.*
 import java.util.concurrent.CompletableFuture
 
@@ -13,10 +15,11 @@ class KSurveyPlayer(
     var username: String
 ) : Savable
 {
-    val
+    val completion = KSurveyEntityCompletion()
 
     override fun save(): CompletableFuture<Void>
     {
-        TODO("Not yet implemented")
+        return KPlayerHandler.playerHandle
+            .saveEntry(uniqueId.toString(), this)
     }
 }
