@@ -1,8 +1,9 @@
 package gg.scala.survey
 
 import gg.scala.commons.ExtendedScalaPlugin
-import gg.scala.survey.registrar.AvailabilityHandler
+import gg.scala.survey.registrar.KSurveyAvailabilityHandler
 import gg.scala.survey.registrar.KPlayerHandler
+import gg.scala.survey.registrar.KSurveyHandler
 import gg.scala.survey.survey.deployment.KSurveyDeploymentHelper
 
 /**
@@ -15,7 +16,7 @@ class KSurveySpigotPlugin : ExtendedScalaPlugin()
     {
         listOf(
             KSurveyDeploymentHelper, KPlayerHandler,
-            AvailabilityHandler
+            KSurveyAvailabilityHandler, KSurveyHandler
         ).forEach { it.initialLoad() }
     }
 }

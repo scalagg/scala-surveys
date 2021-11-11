@@ -18,7 +18,7 @@ import java.util.*
  * @author GrowlyX
  * @since 11/10/2021
  */
-object AvailabilityHandler : ObjectRegistrar<String, KSurveyAvailabilityFilter>()
+object KSurveyAvailabilityHandler : ObjectRegistrar<String, KSurveyAvailabilityFilter>()
 {
     override fun initialLoad()
     {

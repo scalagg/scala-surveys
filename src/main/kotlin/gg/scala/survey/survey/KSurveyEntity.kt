@@ -1,6 +1,6 @@
 package gg.scala.survey.survey
 
-import gg.scala.survey.registrar.AvailabilityHandler
+import gg.scala.survey.registrar.KSurveyAvailabilityHandler
 import gg.scala.survey.survey.deployment.KSurveyDeployment
 import java.util.*
 
@@ -20,5 +20,5 @@ abstract class KSurveyEntity(
     val deployment = KSurveyDeployment()
     val questionnaire = KSurveyQuestionnaire()
 
-    val availability = AvailabilityHandler.find("default")!!
+    val availability = KSurveyAvailabilityHandler.find("default")!!
 }
